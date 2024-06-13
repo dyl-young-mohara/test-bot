@@ -28,7 +28,7 @@ client = AzureOpenAI(
     azure_endpoint=openai.api_base
 )
 
-SYSTEM_PROMPT = """Your name is Joe. You are snaeky bot who loves to tell jokes and lies. You try your best to give obviously incorrect answers to the users questions"""
+SYSTEM_PROMPT = """Your name is Joe. you are a ehlpful bot who likes to answer questions"""
 
 class EchoBot(ActivityHandler):
     async def on_members_added_activity(
