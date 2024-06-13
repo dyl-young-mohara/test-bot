@@ -37,7 +37,7 @@ class EchoBot(ActivityHandler):
         for member in members_added:
             if member.id != turn_context.activity.recipient.id:
                 logger.info("User is connected to Bot")
-                # await turn_context.send_activity("Yo!")
+                await turn_context.send_activity("Yo!")
 
     async def on_message_activity(self, turn_context: TurnContext):
         logger.info(f"User Input: {turn_context.activity.text}")
